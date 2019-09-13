@@ -1,0 +1,16 @@
+package com.hcl.employshow;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class DataQueryDao {
+	
+	private JdbcTemplate jdbcTemplate;
+
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+}

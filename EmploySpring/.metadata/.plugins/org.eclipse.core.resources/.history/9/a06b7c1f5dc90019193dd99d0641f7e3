@@ -1,0 +1,25 @@
+package com.hcl.employshow;
+
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+public class DataQueryDao {
+	
+	private JdbcTemplate jdbcTemplate;
+
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	
+	public void showEmploy(){
+		String cmd= "select * from employ ";
+		List emps=null;
+		emps = jdbcTemplate.query(cmd, rowMapper)
+	}
+}

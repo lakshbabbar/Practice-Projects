@@ -1,0 +1,6 @@
+package com.hcl.hello;
+
+@Controller
+public class HelloWorldController {
+
+}

@@ -1,0 +1,42 @@
+package com.hcl.college;
+
+public class subjects {
+
+	private int year;
+	private String instructor;
+	private String subject;
+	private int theory;
+	private int practical;
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public String getInstructor() {
+		return instructor;
+	}
+	public void setInstructor(String instructor) {
+		this.instructor = instructor;
+	}
+	public String getSubjects() {
+		return subjects;
+	}
+	public void setSubjects(String subjects) {
+		this.subjects = subjects;
+	}
+	public int getTheory() {
+		return theory;
+	}
+	public void setTheory(int theory) {
+		this.theory = theory;
+	}
+	public int getPractical() {
+		return practical;
+	}
+	public void setPractical(int practical) {
+		this.practical = practical;
+	}
+	
+	
+}

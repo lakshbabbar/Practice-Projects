@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function myfunction(){
+	var s = document.getElementById("myselect");
+	var sub = s.options[s.selectedIndex].value;
+	if(sub="microprocessor"){
+		document.getElementById("theory").value=34;
+		document.getElementById("practical").value=12;
+	}
+	else if(sub="java"){
+		document.getElementById("theory").value=45;
+		document.getElementById("practical").value=87;
+	}
+	else if(sub="c#"){
+		document.getElementById("theory").value=58;
+		document.getElementById("practical").value=28;
+	}
+	else if(sub="iot"){
+		document.getElementById("theory").value=53;
+		document.getElementById("practical").value=38;
+	}
+	else if(sub="ai"){
+		document.getElementById("theory").value=30;
+		document.getElementById("practical").value=63;
+	}
+	else if(sub="software"){
+		document.getElementById("theory").value=30;
+		document.getElementById("practical").value=52;
+	}
+	else if(sub="servlets"){
+		document.getElementById("theory").value=67;
+		document.getElementById("practical").value=90;
+	}
+	else{
+		document.getElementById("theory").value=11;
+		document.getElementById("practical").value=15;
+	}
+	
+}
+
+</script>
+</head>
+<body>
+<form action="SubjectModule.jsp" method="get">
+<select id="myselect" onchange="myfunction()">
+<option value="microprocessor" name="subdrop" >Microprocessor Interfacing</option>
+<option value="java" name="subdrop" >Java</option>
+<option value="c#" name="subdrop" >C#</option>
+<option value="iot" name="subdrop" >IOT</option>
+<option value="ai" name="subdrop" >Artificial Intelligence</option>
+<option value="software" name="subdrop" >Software Intelligence</option>
+<option value="servlets" name="subdrop" >Servlets</option>
+<option value="ds" name="subdrop" >Data Structures</option>
+</select><br/><br/>
+Theory : <input type = "text" id="theory"/><br/><br/>
+Practical : <input type="text" id="practical"/><br/><br/>
+Year : <input type="text" name="year"/><br/><br/>
+Instructor : <input type="text" name="instructor"/><br/><br/>
+<input type="submit" value="submit" />
+</form>
+</body>
+</html>
